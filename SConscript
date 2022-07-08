@@ -51,6 +51,6 @@ CPPDEFINES = ['NNCASE_TARGET=k210',
 'LOG_KERNEL', 
 '__riscv64']
 
-group = DefineGroup('kendryte-sdk', src, depend = ['PKG_USING_KENDRYTE_SDK'], CPPPATH = CPPPATH, LOCAL_CPPDEFINES = CPPDEFINES)
+group = DefineGroup('K210-SDK', src, depend = ['PKG_USING_K210_SDK'], CPPPATH = CPPPATH, LOCAL_CPPDEFINES = CPPDEFINES)
 
 Return('group')
