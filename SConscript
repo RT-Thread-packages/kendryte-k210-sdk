@@ -24,16 +24,17 @@ lib/drivers/sysctl.c
 lib/drivers/timer.c
 lib/drivers/utils.c
 lib/drivers/wdt.c
-lib/nncase/runtime/kernel_registry.cpp
-lib/nncase/runtime/interpreter.cpp
-lib/nncase/runtime/neutral/neutral_ops.cpp
-lib/nncase/runtime/k210/interpreter.cpp
-lib/nncase/runtime/k210/k210_ops.cpp
-lib/nncase/runtime/cpu/cpu_ops.cpp
+lib/nncase/v0/runtime/kernel_registry.cpp
+lib/nncase/v0/runtime/interpreter.cpp
+lib/nncase/v0/runtime/neutral/neutral_ops.cpp
+lib/nncase/v0/runtime/k210/interpreter.cpp
+lib/nncase/v0/runtime/k210/k210_ops.cpp
+lib/nncase/v0/runtime/cpu/cpu_ops.cpp
 lib/nncase/nncase.cpp
 ''')
 CPPPATH = [cwd + '/lib/drivers/include',
-cwd + '/lib/nncase/include',  
+cwd + '/lib/nncase/v0/include',
+cwd + '/lib/nncase/include',
 cwd + '/third_party/xtl/include',
 cwd + '/lib/bsp/include',
 cwd + '/lib/utils/include']
